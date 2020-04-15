@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>mrs.yumaguzina's blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Блог Лилии Вильдановой</a></h1>
+		</div>	
+
+		{% for post in posts %}
+    		<div>
+		        <p>publish: {{ post.publish_date }}</p>
+		        <h2><a href="">{{ post.title }}</a></h2>
+		        <p>{{ post.text|linebreaksbr }}</p>
+    		</div>
+		{% endfor %}
+    </body>
+</html>
+
